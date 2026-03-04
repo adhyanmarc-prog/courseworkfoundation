@@ -150,6 +150,22 @@ Malicious payload encoded in Base64 to evade detection.
 Therefore:
 Security systems must decode and inspect payloads before validation.
 
+### Interoperability with Modern Web Protocols
+
+Encoding formats integrate with:
+
+REST APIs (JSON payloads)
+
+OAuth authentication (Base64 tokens)
+
+HTTPS/TLS encryption
+
+SMTP email systems
+
+Web forms and query parameters
+
+Encoding ensures cross-platform compatibility between systems.
+
 ### Task 2 – Computational Complexity Analysis
  Problem Description
 
