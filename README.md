@@ -92,6 +92,30 @@ TLS ensures confidentiality and integrity.
 
 Encoding ≠ Encryption.
 
+### Role in TLS and HTTPS
+
+TLS provides:
+
+Confidentiality
+
+Integrity
+
+Authentication
+
+Encoding ensures:
+
+Protocol compatibility
+
+Safe formatting
+
+Reliable payload transmission
+
+Example:
+
+OAuth tokens are Base64 encoded before transmission
+
+TLS encrypts them during transit
+
 ### Task 2 – Computational Complexity Analysis
  Problem Description
 
