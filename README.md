@@ -225,3 +225,42 @@ Verification → Polynomial time
 Search space → Exponential growth
 
 Overall → NP problem
+
+### Brute Force Approach
+Method:
+
+1. Generate all possible permutations of students.
+
+2. Check each arrangement against constraints.
+
+3. Stop when a valid arrangement is found.
+
+Time Complexity:
+
+O(n!)
+
+This approach is not scalable because factorial growth becomes extremely large even for small values of n.
+
+### Heuristic Approach
+
+A heuristic approach reduces search space by:
+
+1. Placing students one by one
+
+2. Checking constraints during placement
+
+3. Backtracking when constraints fail
+
+Time Complexity:
+
+Worst case still exponential, but significantly reduced in practice.
+
+Heuristics improve performance but do not guarantee optimal efficiency.
+
+Example:
+
+5 students → 120 arrangements
+
+10 students → 3,628,800 arrangements
+
+15 students → 1.3 trillion arrangements
