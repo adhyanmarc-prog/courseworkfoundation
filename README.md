@@ -1,5 +1,5 @@
-## Coursework – Task 1, Task 2 and Task 3
-### Overview
+# Coursework – Task 1, Task 2 and Task 3
+# Overview
 
 This repository contains the solutions and analysis for:
 
@@ -9,7 +9,7 @@ Task 2: Computational problem analysis and complexity classification.
 
 Task 3: Database normalization, ER modeling, and SQL implementation.
 
-### Task 1 – Enhancing Secure Data Exchange with Encoding Formats and Protocol Integration
+## Task 1 – Enhancing Secure Data Exchange with Encoding Formats and Protocol Integration
 
 This project explores the role of encoding formats in secure data exchange across modern web protocols. The study evaluates Base64, Hexadecimal, and URL encoding and examines their integration with HTTPS, TLS, SMTP, REST APIs, and OAuth authentication systems.
 
@@ -191,7 +191,7 @@ When integrated properly with HTTPS, TLS, SMTP, and OAuth mechanisms, encoding e
 Proper validation and decoding analysis are necessary to prevent encoding-based obfuscation attacks.
 
 
-### Task 2 – Computational Complexity Analysis
+## Task 2 – Computational Complexity Analysis
  Problem Description
 
 A teacher must arrange students in a single row of seats before an examination with the following constraints:
