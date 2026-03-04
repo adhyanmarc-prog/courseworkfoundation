@@ -15,7 +15,7 @@ This project explores the role of encoding formats in secure data exchange acros
 
 The objective is to analyze their strengths, weaknesses, interoperability, and potential security risks, and propose improved encoding and integration strategies.
 
-#### Introduction
+### Introduction
 
 Secure data exchange is essential in modern web systems including online banking, e-commerce, APIs, and email systems. Encoding formats play a key role in transforming data into safe transmission formats that are compatible with network protocols.
 
@@ -76,6 +76,21 @@ Weaknesses:
 Can be abused for obfuscation attacks
 
 Double encoding attacks possible
+
+### Encoding in Secure HTTP Transmission
+
+When a client sends data over HTTPS:
+
+Data may be URL encoded (form submission)
+
+JSON payload may contain Base64-encoded binary data
+
+TLS encrypts the entire transmission
+
+Encoding ensures data structure integrity.
+TLS ensures confidentiality and integrity.
+
+Encoding ≠ Encryption.
 
 ### Task 2 – Computational Complexity Analysis
  Problem Description
