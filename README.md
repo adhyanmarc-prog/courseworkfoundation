@@ -116,6 +116,40 @@ OAuth tokens are Base64 encoded before transmission
 
 TLS encrypts them during transit
 
+### Role in SMTP (Email Transmission)
+
+Email attachments are encoded in Base64 before being sent via SMTP because SMTP supports only text-based transmission.
+
+Flow:
+
+File → Base64 encoding
+
+Encoded data → SMTP transmission
+
+Receiver decodes Base64
+
+TLS secures the channel
+
+Without encoding, binary files would corrupt during transfer.
+
+### Risks of Encoding-Based Obfuscation
+
+Attackers misuse encoding to:
+
+Hide malicious payloads
+
+Bypass filters
+
+Perform double encoding attacks
+
+Hide SQL injection attempts
+
+Example:
+Malicious payload encoded in Base64 to evade detection.
+
+Therefore:
+Security systems must decode and inspect payloads before validation.
+
 ### Task 2 – Computational Complexity Analysis
  Problem Description
 
