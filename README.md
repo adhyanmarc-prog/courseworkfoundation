@@ -21,7 +21,61 @@ Secure data exchange is essential in modern web systems including online banking
 
 Encoding does not encrypt data; instead, it converts it into a different representation to ensure reliable and standardized transmission.
 
+#### Base64 Encoding
 
+Base64 converts binary data into ASCII text format.
+
+Strengths:
+
+Safe for HTTP transmission
+
+Required for email attachments (MIME)
+
+Used in OAuth tokens and API authentication
+
+Prevents data corruption in text-based protocols
+
+Weaknesses:
+
+Increases data size by ~33%
+
+Not secure by itself
+
+Easily reversible
+
+#### Hex encoding converts binary data into base-16 representation.
+
+Strengths:
+
+Easy debugging
+
+Used in cryptographic hashes (SHA-256, MD5)
+
+Human-readable representation
+
+Weaknesses:
+
+Doubles data size
+
+No confidentiality protection
+
+#### URL Encoding
+
+URL encoding ensures safe transmission of special characters in URLs.
+
+Strengths:
+
+Prevents malformed URLs
+
+Essential for REST APIs
+
+Protects against injection in query parameters
+
+Weaknesses:
+
+Can be abused for obfuscation attacks
+
+Double encoding attacks possible
 
 ### Task 2 – Computational Complexity Analysis
  Problem Description
