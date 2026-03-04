@@ -182,6 +182,13 @@ Use secure token formats (JWT with signature validation)
 
 Apply rate limiting to prevent encoded attack flooding
 
+### Conclusion
+
+Encoding formats such as Base64, Hex, and URL encoding are essential for secure and efficient data transmission. However, encoding alone does not provide security.
+
+When integrated properly with HTTPS, TLS, SMTP, and OAuth mechanisms, encoding enhances reliability and interoperability while encryption ensures confidentiality.
+
+Proper validation and decoding analysis are necessary to prevent encoding-based obfuscation attacks.
 
 
 ### Task 2 – Computational Complexity Analysis
