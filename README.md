@@ -166,6 +166,24 @@ Web forms and query parameters
 
 Encoding ensures cross-platform compatibility between systems.
 
+### Proposed Improvements
+
+To enhance secure data exchange:
+
+Always combine encoding with TLS encryption
+
+Implement strict input validation after decoding
+
+Detect double encoding attacks
+
+Use Content Security Policy (CSP)
+
+Use secure token formats (JWT with signature validation)
+
+Apply rate limiting to prevent encoded attack flooding
+
+
+
 ### Task 2 – Computational Complexity Analysis
  Problem Description
 
