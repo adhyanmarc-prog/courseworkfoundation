@@ -264,3 +264,13 @@ Example:
 10 students → 3,628,800 arrangements
 
 15 students → 1.3 trillion arrangements
+
+### Conclusion
+
+The seating arrangement problem belongs to NP because:
+
+The solution can be verified in polynomial time.
+
+Finding the solution may require exponential time in worst case.
+
+Brute force is impractical for large inputs, while heuristics improve feasibility.
