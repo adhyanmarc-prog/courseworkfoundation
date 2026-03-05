@@ -1,4 +1,5 @@
 # Coursework – Task 1, Task 2 and Task 3
+
 # Overview
 
 This repository contains the solutions and analysis for:
@@ -190,9 +191,9 @@ When integrated properly with HTTPS, TLS, SMTP, and OAuth mechanisms, encoding e
 
 Proper validation and decoding analysis are necessary to prevent encoding-based obfuscation attacks.
 
-
 ## Task 2 – Computational Complexity Analysis
- Problem Description
+
+Problem Description
 
 A teacher must arrange students in a single row of seats before an examination with the following constraints:
 
@@ -227,6 +228,7 @@ Search space → Exponential growth
 Overall → NP problem
 
 ### Brute Force Approach
+
 Method:
 
 1. Generate all possible permutations of students.
@@ -274,3 +276,124 @@ The solution can be verified in polynomial time.
 Finding the solution may require exponential time in worst case.
 
 Brute force is impractical for large inputs, while heuristics improve feasibility.
+
+## Task 3 – Database Normalization & ER Design
+
+### Problem Description
+
+A student–club membership system initially contains redundant data in a single table. The goal is to:
+
+1. Remove redundancy
+
+2. Eliminate update and deletion anomalies
+
+3. Improve database performance
+
+4. Achieve Third Normal Form (3NF)
+
+### Normalization Process
+
+#### First Normal Form (1NF)
+
+Requirements:
+
+1. Atomic values
+
+2. No repeating groups
+
+3. Defined primary key
+
+Initial composite key:
+(StudentID, ClubName)
+
+#### Second Normal Form (2NF)
+
+A table is in 2NF if:
+
+1. It is in 1NF
+
+2. No partial dependency exists
+
+Since StudentName and Email depend only on StudentID, and ClubRoom and ClubMentor depend only on ClubName, the table must be decomposed.
+
+Decomposition:
+
+Student Table
+
+1. StudentID (PK)
+
+2. StudentName
+
+3. Email
+
+Club Table
+
+1. ClubName (PK)
+
+2. ClubRoom
+
+3. ClubMentor
+
+Membership Table
+
+1. StudentID (FK)
+
+2. ClubName (FK)
+
+3. JoinDate
+
+4. Primary Key (StudentID, ClubName)
+
+#### Third Normal Form (3NF)
+
+A table is in 3NF if:
+
+1. It is in 2NF
+
+2. No transitive dependency exists
+
+There are no non-key attributes depending on other non-key attributes.
+
+Therefore:
+The 2NF and 3NF structures are the same in this case.
+
+```
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(100),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Club (
+    ClubName VARCHAR(100) PRIMARY KEY,
+    ClubRoom VARCHAR(50),
+    ClubMentor VARCHAR(100)
+);
+
+CREATE TABLE Membership (
+    StudentID INT,
+    ClubName VARCHAR(100),
+    JoinDate DATE,
+    PRIMARY KEY (StudentID, ClubName),
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (ClubName) REFERENCES Club(ClubName)
+);
+```
+
+### Normalization improves:
+
+Data consistency
+
+Elimination of redundancy
+
+Prevention of update anomalies
+
+Storage efficiency
+
+Trade-off:
+
+Requires JOIN operations for queries
+
+Slightly increased query complexity
+
+However, overall database integrity and maintainability improve significantly.
