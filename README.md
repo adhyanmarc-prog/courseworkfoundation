@@ -10,6 +10,11 @@ Task 2: Computational problem analysis and complexity classification.
 
 Task 3: Database normalization, ER modeling, and SQL implementation.
 
+## Quick Start
+```
+git clone https://github.com/adhyanmarc-prog/courseworkfoundation.git
+```
+
 ## Task 1 – Enhancing Secure Data Exchange with Encoding Formats and Protocol Integration
 
 This project explores the role of encoding formats in secure data exchange across modern web protocols. The study evaluates Base64, Hexadecimal, and URL encoding and examines their integration with HTTPS, TLS, SMTP, REST APIs, and OAuth authentication systems.
