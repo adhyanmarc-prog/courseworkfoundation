@@ -1,4 +1,4 @@
-<img src="./diagrams/dataflow.png" width="800" height="400" />
+<img src="./diagrams/dataflow.png" width="800" height="1500" />
 
 The diagram above shows the process of data securely traveling from a client to
 a server and safely processed. At first the client prepares data from a web
