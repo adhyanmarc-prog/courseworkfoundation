@@ -44,37 +44,37 @@ Base64 converts binary data into ASCII text format.
 
 Strengths:
 
-Safe for HTTP transmission
+1. Safe for HTTP transmission
 
-Required for email attachments (MIME)
+2. Required for email attachments (MIME)
 
-Used in OAuth tokens and API authentication
+3. Used in OAuth tokens and API authentication
 
-Prevents data corruption in text-based protocols
+4. Prevents data corruption in text-based protocols
 
 Weaknesses:
 
-Increases data size by ~33%
+1. Increases data size by ~33%
 
-Not secure by itself
+2. Not secure by itself
 
-Easily reversible
+3. Easily reversible
 
 #### Hex encoding converts binary data into base-16 representation.
 
 Strengths:
 
-Easy debugging
+1. Easy debugging
 
-Used in cryptographic hashes (SHA-256, MD5)
+2. Used in cryptographic hashes (SHA-256, MD5)
 
-Human-readable representation
+3. Human-readable representation
 
 Weaknesses:
 
-Doubles data size
+1. Doubles data size
 
-No confidentiality protection
+2. No confidentiality protection
 
 #### URL Encoding
 
@@ -82,17 +82,17 @@ URL encoding ensures safe transmission of special characters in URLs.
 
 Strengths:
 
-Prevents malformed URLs
+1. Prevents malformed URLs
 
-Essential for REST APIs
+2. Essential for REST APIs
 
-Protects against injection in query parameters
+3. Protects against injection in query parameters
 
 Weaknesses:
 
-Can be abused for obfuscation attacks
+1. Can be abused for obfuscation attacks
 
-Double encoding attacks possible
+2. Double encoding attacks possible
 
 ### Encoding in Secure HTTP Transmission
 
@@ -113,19 +113,19 @@ Encoding ≠ Encryption.
 
 TLS provides:
 
-Confidentiality
+- Confidentiality
 
-Integrity
+- Integrity
 
-Authentication
+- Authentication
 
 Encoding ensures:
 
-Protocol compatibility
+- Protocol compatibility
 
-Safe formatting
+- Safe formatting
 
-Reliable payload transmission
+- Reliable payload transmission
 
 Example:
 
@@ -171,15 +171,15 @@ Security systems must decode and inspect payloads before validation.
 
 Encoding formats integrate with:
 
-REST APIs (JSON payloads)
+- REST APIs (JSON payloads)
 
-OAuth authentication (Base64 tokens)
+- OAuth authentication (Base64 tokens)
 
-HTTPS/TLS encryption
+- HTTPS/TLS encryption
 
-SMTP email systems
+- SMTP email systems
 
-Web forms and query parameters
+- Web forms and query parameters
 
 Encoding ensures cross-platform compatibility between systems.
 
