@@ -10,6 +10,17 @@ Task 2: Computational problem analysis and complexity classification.
 
 Task 3: Database normalization, ER modeling, and SQL implementation.
 
+## Project Structure
+
+```
+Normalisation-task-3/
+├── diagrams/
+├── Normalization.md
+├── README.md
+├── SQLoperation.md
+├── dataflowdiagram.md
+└── erdiagram.md
+```
 ## Quick Start
 ```
 git clone https://github.com/adhyanmarc-prog/courseworkfoundation.git
