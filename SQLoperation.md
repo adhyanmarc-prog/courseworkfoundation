@@ -1,4 +1,4 @@
-<img src="./diagrams/ts1.png" width="800" height="500" />
+<img src="./diagrams/s1.png" width="800" height="500" />
 
 We created a new database in order to execute our commands inside it. The name of our database is chill. As we can see in the image above we created a new database named chill.
 
